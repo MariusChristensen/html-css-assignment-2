@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  max-width: 920px;
+  margin: 2rem;
+}
+
+.card {
+  padding: 3rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 5rem;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.orange button {
+  color: hsl(31, 77%, 52%);
+}
+.cyan button {
+  color: hsl(184, 100%, 22%);
+}
+.dark-cyan button {
+  color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.card img {
+  margin-bottom: 2rem;
+}
